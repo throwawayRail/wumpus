@@ -1,0 +1,141 @@
+// friends.pl
+
+?- likes(john, jane).
+true.
+
+?- friends (X, Y).
+X = john,
+Y = jane ;
+X = jane,
+Y = john .
+
+?- likes (jane, jack).
+false.
+
+
+
+
+// result.pl
+
+?- getresult.
+Whose result do you want to know?
+lawine.
+
+This is the result: 8.7
+true.
+
+?- getresult.
+Whose result do you want to know?
+flamme.
+
+This is the result: 9.3
+true.
+
+?- getresult.
+Whose result do you want to know?
+fern.
+
+This is the result: 8.2
+true.
+
+
+
+
+
+// result_original.pl
+
+?- getresult.
+Whose result do you want to know
+|    asmita.
+
+
+this is the result
+7.2
+true.
+
+
+
+
+
+
+// fibonacci.pl
+
+?- 
+|    fib(7,X).
+X = 13 .
+
+?- fib(10,X).
+X = 55 .
+
+?- fib(6,X).
+X = 8 .
+
+
+
+
+// cars.pl
+?- preferred_car(chirag,bmw).
+true.
+
+?- preferred_car(chirag,ferrari).
+false.
+
+?- preferred_car(pravin,ferrari).
+true.
+
+
+
+
+//family.pl
+
+?- mother(jane,mary).
+true.
+
+?- sibling(bob,mary).
+true .
+
+?- sibling(ann,john).
+false.
+
+
+
+
+
+
+// happy.pl
+
+?- happy(jin).
+true.
+
+?- happy(john).
+false.
+
+
+
+// happy_modified.pl
+
+?- happy(john).
+true.
+
+
+
+
+//factorial.pl
+
+?- factorial(5,Result).
+Result = 120 .
+
+
+
+
+
+//evenodd.pl
+
+|    is_even(9).
+false.
+
+?- is_even(8).
+true .
+
+?- is_odd(7).
+true .
